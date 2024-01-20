@@ -1,0 +1,60 @@
+
+
+/* 
+.loginPage{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+} */
+
+.head{
+    position: absolute;
+    border: 2px solid red;
+    width: 30%;
+    height: 30%;
+    left: 20%;
+    top: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+
+}
+.loginDetails{
+    border: 2px solid red;
+    position: absolute;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    left: 60%;
+    top: 30%;
+    width: 30%;
+    height: 40%;
+    gap: 25px;
+    border-radius: 25px;
+}
+
+#userName {
+    height: 10%;
+    width: 40%;
+    border-radius: 20px;
+    
+}
+#pass {
+    height: 10%;
+    width: 40%;
+    border-radius:20px;
+
+}
+::placeholder{
+    
+    text-align: center;
+}
+.btn{
+    
+    cursor: pointer;
+    
+}
