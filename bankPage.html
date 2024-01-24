@@ -8,7 +8,38 @@
 </head>
 <body>
     <div class = "greet">
-        <!-- <h1 class = "greeting"></h1> -->
+    </div>
+
+    <div class = "banking">
+        <span id = "transfer">
+            <h1 class = "bhead">Transfer Money</h1>
+            <input type="text" class= "bhead" placeholder="Transfer To">
+            <input type="number" min = "0" class = "bhead" placeholder="Amount">
+            <button class = "bttn bhead" id = "btn1" onclick = "bankStatement()">➡️</button>
+        </span>
+        <span id = "loan">
+            <h1 class = "bhead">Request Loan</h1>
+            <input placeholder="Amount" class = "bhead">
+            <button class = "bttn bhead" id = "btn2"  >➡️</button> 
+
+        </span>
+        <span id = "close">
+            <h1 class = "bhead">Close Account</h1>
+            <input placeholder = "Confirm User" class = "bhead" >
+            <input placeholder = "Confirm Pin" class = "bhead" type = "number">
+            <button class = "bttn bhead" id = "btn2">➡️</button> 
+        </span>
+    </div>
+
+    <div class = "statement">
+        <h1>Current Balance</h1>
+        <h1 id = "amount">$10000</h1>
+    
+
+        <span class = "record">
+            <ul class = "record-list"></ul>
+        </span>
+
     </div>
 </body>
 <script src = "app.js"></script>

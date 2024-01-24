@@ -58,3 +58,61 @@
     cursor: pointer;
     
 }
+
+.banking{
+    /* border:2px solid red; */
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    width: 40%;
+    left: 60%;
+    top: 15%;
+    gap: 50px;
+}
+
+#transfer{
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 10%;
+    height: 25%;
+    width: 80%;
+    border-radius: 12px;
+    background: linear-gradient(to bottom , rgb(219, 219, 169),rgb(255, 230, 0));
+}
+
+.bhead{
+    position: relative;
+    left: 15%;
+}
+
+#loan{
+    /* border: 2px solid red;  */
+    position: absolute;
+    /* top: 10%; */
+    top: 40%;
+    height: 25%;
+    width: 80%;
+    border-radius: 12px;
+    background: linear-gradient(to bottom,rgb(95, 232, 95),green);
+    
+}
+#close{
+    border: 2px solid red;
+    position: absolute;
+    /* top: 10%; */
+    top: 70%;
+    height: 25%;
+    width: 80%;
+    border-radius: 12px;
+    background-color: rgb(220, 50, 50);
+    
+}
+.statement{
+    border: 2px solid red;
+    position: absolute;
+    width: 40%;
+    height: 80%;
+}
