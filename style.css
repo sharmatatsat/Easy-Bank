@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Mono:wght@600&display=swap');
 
 
+body{
+    font-family: 'Montserrat', sans-serif;
+
+}
 /* 
 .loginPage{
     position: absolute;
@@ -11,7 +16,7 @@
 
 .head{
     position: absolute;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 30%;
     height: 30%;
     left: 20%;
@@ -23,7 +28,7 @@
 
 }
 .loginDetails{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     position: absolute;
     display: flex;
     justify-content:center;
@@ -80,9 +85,8 @@
     height: 25%;
     width: 80%;
     border-radius: 12px;
-    background: linear-gradient(to bottom , rgb(219, 219, 169),rgb(255, 230, 0));
+    background: linear-gradient(to bottom , rgb(230 202 106),rgb(255 151 0));
 }
-
 .bhead{
     position: relative;
     left: 15%;
@@ -100,7 +104,7 @@
     
 }
 #close{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     position: absolute;
     /* top: 10%; */
     top: 70%;
@@ -111,8 +115,114 @@
     
 }
 .statement{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     position: absolute;
     width: 40%;
     height: 80%;
+    left: 15%;
+    background-color: #dcdbdb;
 }
+
+
+.record-list{
+    position: absolute;
+    top: 11%;
+    gap: 20px;
+}
+
+
+.innerList{
+    list-style: none;
+    /* border: 2px solid red; */
+    position: relative;
+    width: 120%;
+    margin-top: 40%;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    /* background-color: #f06363; */
+    color: white;
+    /* font-weight: bold; */
+}
+
+#amount{
+    position: absolute;
+    /* border: 2px solid red; */
+    top: 0%;
+    left: 70%;
+    width: 25%;
+}
+
+
+.amount-transaction{
+    position: absolute;
+    /* border: 2px solid red; */
+    left: 50%; 
+    top: 7%;
+    width: 30%;
+    height: 90%;
+}
+
+.balanceList{
+    /* border: 2px solid red; */
+    list-style: none;
+    width: fit-content;
+    position: relative;
+    margin-top: 23%;
+    margin-left: 40%;
+}
+
+
+#time {
+    width: fit-content;
+    position: absolute;
+    top: 5%;
+    left: 7%;
+    font-size: 15px;
+    color: #979797;
+
+}
+.amountSpent{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 92%;
+    left: 15%;
+    font-size: 8px;
+    gap: 12px;
+}
+#IN{
+    color: green;
+
+}
+
+#OUT{
+    color: red;
+}
+
+#Interest{
+    color: green;
+}
+.logOut{
+    /* border: 2px solid red; */
+    width: fit-content;
+    position: absolute;
+    top: 90%;
+    left: 80%;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.bgColorRed{
+    background-color: #f06363;
+}
+
+.bgColorGreen{
+    background-color: green;
+}
+#currBal{
+    position: absolute;
+    left: 5%;
+}
+

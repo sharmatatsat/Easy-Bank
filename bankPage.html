@@ -13,14 +13,14 @@
     <div class = "banking">
         <span id = "transfer">
             <h1 class = "bhead">Transfer Money</h1>
-            <input type="text" class= "bhead" placeholder="Transfer To">
-            <input type="number" min = "0" class = "bhead" placeholder="Amount">
-            <button class = "bttn bhead" id = "btn1" onclick = "bankStatement()">➡️</button>
+            <input type="text" class= "bhead" placeholder="Transfer To" id = "transferRecipient">
+            <input type="number" min = "0" class = "bhead" placeholder="Amount" id = "transferAmount">
+            <button class = "bttn bhead" id = "btn1" onclick = "bankStatementTransfer(), expenseInfo(), changeColorRed()">➡️</button>
         </span>
         <span id = "loan">
             <h1 class = "bhead">Request Loan</h1>
-            <input placeholder="Amount" class = "bhead">
-            <button class = "bttn bhead" id = "btn2"  >➡️</button> 
+            <input placeholder="Amount" type = "number" min = "0" class = "bhead" id = 'loanAmount'>
+            <button class = "bttn bhead" id = "btn2" onclick = "bankStatementLoan(), incomeInfo() , DisplayInterest() , changeColorGreen()" >➡️</button> 
 
         </span>
         <span id = "close">
@@ -32,14 +32,26 @@
     </div>
 
     <div class = "statement">
-        <h1>Current Balance</h1>
-        <h1 id = "amount">$10000</h1>
+        <h1 id = "currBal">Current Balance</h1>
+        <h6 id = "time"></h6>
+        <h1 id = "amount"></h1>
     
 
         <span class = "record">
             <ul class = "record-list"></ul>
+            <ul class = "amount-transaction"></ul>
         </span>
 
+    </div>
+
+    <div class = "amountSpent">
+        <h1 id= "IN"></h1>
+        <h1 id = "OUT"></h1>
+        <h1 id = "Interest"></h1>
+    </div>
+
+    <div class = "logOut">
+        <h6 id = "loggedOut"></h6>
     </div>
 </body>
 <script src = "app.js"></script>
