@@ -9,34 +9,7 @@ const user =
     }
     
 
-    // {
-    //     name: 'Parth',
-    //     userName: 'ghadgeparth',
-    //     pass: 'bankist24',
-    //     pin: 4321,
-    //     InitialAmount: 50000,
-    //     Nationality: 'Indian'
-    // },
-    
-    // {
-    //     name: 'Prateek',
-    //     userName: 'chaudharypratek',
-    //     pass: 'bankist11',
-    //     pin: 6969,
-    //     InitialAmount: 25000,
-    //     Nationality: 'Indian'
-    // },
-
-    // {
-    //     name: 'Andrew',
-    //     userName: 'tateandrew',
-    //     pass: 'bankist26',
-    //     pin: 1010,
-    //     InitialAmount: 250000,
-    //     Nationality: 'American'
-    // }
-
-
+  
 
 const currentDate = new Date();
 const hours = currentDate.getHours();
@@ -93,6 +66,7 @@ const AccountInfo = () => {
        
                  
         typeGreet.innerHTML = `Good ${time}, ${user.name}`;
+        console.log("working greetFunc");
              
      }
 
