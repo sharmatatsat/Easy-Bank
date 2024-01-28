@@ -14,19 +14,19 @@
             <h1 class = "bhead">Transfer Money</h1>
             <input type="text" class= "bhead" placeholder="Transfer To" id = "transferRecipient">
             <input type="number" min = "0" class = "bhead" placeholder="Amount" id = "transferAmount">
-            <button class = "bttn bhead" id = "btn1" onclick = "bankStatementTransfer(), expenseInfo()">➡️</button>
+            <button class = "bttn bhead" id = "btn1" onclick = "bankStatementTransfer(), expenseInfo()">→</button>
         </span>
         <span id = "loan">
             <h1 class = "bhead">Request Loan</h1>
             <input placeholder="Amount" type = "number" min = "0" class = "bhead" id = 'loanAmount'>
-            <button class = "bttn bhead" id = "btn2" onclick = "bankStatementLoan(), incomeInfo() , DisplayInterest()" >➡️</button> 
+            <button class = "bttn bhead" id = "btn2" onclick = "bankStatementLoan(), incomeInfo() , DisplayInterest()" >→</button> 
 
         </span>
         <span id = "close">
             <h1 class = "bhead">Close Account</h1>
-            <input placeholder = "Confirm User" class = "bhead" >
-            <input placeholder = "Confirm Pin" class = "bhead" type = "number">
-            <button class = "bttn bhead" id = "btn2">➡️</button> 
+            <input placeholder = "Confirm User" class = "bhead" id = "user_name">
+            <input placeholder = "Confirm Pin" class = "bhead" type = "number" id = "pin">
+            <button class = "bttn bhead" id = "btn2" onclick = "closeAccount()">→</button> 
         </span>
     </div>
 
@@ -52,6 +52,14 @@
     <div class = "logOut">
         <h6 id = "loggedOut"></h6>
     </div>
+
+    <!-- <div id="myModal" class="modal">
+        
+        <div class="modal-content">
+            <span class="close-btn" id="closeModalBtn">&times;</span>
+            <p>This is a simple modal.</p>
+        </div>
+    </div> -->
 </body>
 <script src = "app.js"></script>
 </html>
