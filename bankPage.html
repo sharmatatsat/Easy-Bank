@@ -14,12 +14,12 @@
             <h1 class = "bhead">Transfer Money</h1>
             <input type="text" class= "bhead" placeholder="Transfer To" id = "transferRecipient">
             <input type="number" min = "0" class = "bhead" placeholder="Amount" id = "transferAmount">
-            <button class = "bttn bhead" id = "btn1" onclick = "bankStatementTransfer(), expenseInfo(), changeColorRed()">➡️</button>
+            <button class = "bttn bhead" id = "btn1" onclick = "bankStatementTransfer(), expenseInfo()">➡️</button>
         </span>
         <span id = "loan">
             <h1 class = "bhead">Request Loan</h1>
             <input placeholder="Amount" type = "number" min = "0" class = "bhead" id = 'loanAmount'>
-            <button class = "bttn bhead" id = "btn2" onclick = "bankStatementLoan(), incomeInfo() , DisplayInterest() , changeColorGreen()" >➡️</button> 
+            <button class = "bttn bhead" id = "btn2" onclick = "bankStatementLoan(), incomeInfo() , DisplayInterest()" >➡️</button> 
 
         </span>
         <span id = "close">
@@ -53,5 +53,5 @@
         <h6 id = "loggedOut"></h6>
     </div>
 </body>
-<script src = "bankPage.js"></script>
+<script src = "app.js"></script>
 </html>
